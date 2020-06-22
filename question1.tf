@@ -10,9 +10,9 @@ Variable "locations" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "my-test-candidate-<location[0]>"
+  name     = "my-test-candidate-<locations[0]>"
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "my-test-candidate-<location[1]>"
+  name     = "my-test-candidate-<locations[1]>"
 }
